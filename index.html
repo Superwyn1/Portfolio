@@ -18,16 +18,25 @@
                 <span>Profile</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <a href="#">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a class="nav-link" href="about.html">About</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#">Skills</a>
+                </div>
             </div>
+            
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
                 <a href="">Home</a>
-                <a href="">About</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
                 <a href="">Skills</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
@@ -68,5 +77,6 @@
                 navbar.style.transform = "translateY(-500px)"
             }
         </script>
+        
 </body>
 </html>

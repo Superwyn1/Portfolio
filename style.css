@@ -182,4 +182,10 @@ section{
         margin-bottom: 0px;
     }
 }
+.content p { 
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+    margin: 20px 0; /* Adjust margin to your preference */
+    text-align: justify; /* Justifies the text */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
 
