@@ -77,13 +77,16 @@ section{
     width: 100%;
     height: 90vh;
 }
-.main-container{
+.main-container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Optional: Add spacing between elements */
+    padding-top: 20px; /* Optional: Add padding to fine-tune spacing */
 }
+
 .main-container .image{
     z-index: -1;
     width: 50%;
@@ -100,13 +103,16 @@ section{
     width: 40%;
     min-height: 100px;
 }
-.content h1{
+.content h1 {
     font-size: clamp(1rem, 2rem + 5vw, 3rem);
+    margin-top: 20px; /* Adjust the value as needed */
 }
-.content h1 span{
+
+.content h1 span {
     color: rgb(145, 0, 0);
     text-shadow: 0 0 10px rgb(121, 121, 106);
 }
+
 .content .typewriter{
     font-weight: 600;
     font-size: clamp(1rem, 1rem + 5vw, 2rem);
@@ -184,8 +190,47 @@ section{
 }
 .content p { 
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
-    margin: 20px 0; /* Adjust margin to your preference */
-    text-align: justify; /* Justifies the text */
-    line-height: 1.6; /* Adjust line height for better readability */
+    margin: 20px 0; /* margin */
+    text-align: justify; /* justified text */
+    line-height: 1.6; /* height line para ma basa ug tarong */
+}
+.social-links {
+    text-align: justify; /* Makes the text justified */
+    line-height: 1.8; /* Improves readability by adding space between lines */
+    padding: 10px 10px; /* Adds padding around the section */
 }
 
+.social-links h4 {
+    display: flex; /* Allows alignment of labels and values */
+    gap: 10px; /* Adds space between the label and value */
+    font-size: 16px; /* Adjust font size for better readability */
+    margin-bottom: 5px; /* Adds spacing between rows */
+}
+
+.social-links h4 {
+    margin-top: 0; /* Removes unnecessary top margin for h4 elements */
+    display: flex; /* Ensures consistent alignment for labels and values */
+    gap: 10px; /* Keeps space between labels and values */
+    font-size: 16px; /* Keeps font size readable */
+    margin-bottom: 5px; /* Adds consistent spacing between rows */
+}
+
+.social-links h2 {
+    text-align: center; /* Centers the "Who am I?" heading */
+    margin-bottom: 5px; /* Adds spacing below the heading */
+    font-size: 20px; /* Increases font size for emphasis */
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background:rgb(49, 48, 49);
+    color: rgb(187, 157, 130);
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }

@@ -9,7 +9,30 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    <style>
+        /* Add scrolling support */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto; /* Enables vertical scrolling */
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+        }
+        section {
+            min-height: 100vh; /* Ensures each section takes at least full viewport height */
+        }
+        .main-container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .content {
+            max-width: 600px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -42,41 +65,55 @@
             </div>
         </div>
     </nav>
-        <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right" data-aos-duration="1500">
-                    <img src="image copy.png" alt="">
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="1500">
+                <img src="image copy.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Wewen</span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">4th yr BSIT student, dili kaau ko hasa when it comes to coding but willing to learn bisan pag ug dugay maka gets ug bisan daghan pangutana lezzgooo!!!!</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="500" data-aos-delay="1200">
+                    
+                    <h2>Kinsa rajud ko?</h2>
+                    <h4><strong>Name: </strong>Wyne Khristian B. Ipanag</h4>
+                    <h4><strong>Age: </strong>21 years old</h4>
+                    <h4><strong>Birthdate: </strong>December 22, 2003</h4>
+                    <h4><strong>Address: </strong>Purok 3, Miranda, Damilag, Manolo Fortich, Bukidnon</h4>
+                    <h4><strong>Nationality: </strong>Filipino</h4>
+                    <h4><strong>Religion: </strong>Catholic</h4>
+                    <h4><strong>Gender: </strong>Male</h4>
+                    <a href="#" ><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
                 </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Wewen</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">4th yr BSIT student, dili kaau ko hasa when it comes to coding but willing to learn bisan pag ug dugay maka gets ug bisan daghan pangutana lezzgooo!!!!</p>
-                    <div class="social-links" data-aos="flip-down" data-aos-duration="500" data-aos-delay="1200">
-                        <a href="#" ><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        <button>Download Profile</button>
-                    </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
                 </div>
             </div>
-        </section>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({offset:0});
-        </script>
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
-            }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-        </script>
-        
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+
+        <footer>
+            <p>&copy; Tiil ni Wewen </p>
+        </footer>
+    
 </body>
 </html>
